@@ -1,246 +1,301 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 :root {
-    /* Primary Colors */
-    --color-soft-red: hsl(7, 99%, 70%);
-    --color-yellow: hsl(51, 100%, 49%);
-    --color-dark-desaturated-cyan: hsl(167, 40%, 24%);
-    --color-dark-blue: hsl(198, 62%, 26%);
-    --color-dark-moderate-cyan: hsl(168, 34%, 41%);
+  /* Primary Colors */
+  --color-soft-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --color-dark-blue: hsl(198, 62%, 26%);
+  --color-dark-moderate-cyan: hsl(168, 34%, 41%);
 
-    /* Neutral Colors */
-    --color-very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --color-very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --color-dark-grayish-blue: hsl(232, 10%, 55%);
-    --color-grayish-blue: hsl(210, 4%, 67%);
-    --color-white: hsl(0, 0%, 100%);
+  /* Neutral Colors */
+  --color-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --color-dark-grayish-blue: hsl(232, 10%, 55%);
+  --color-grayish-blue: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
 
-    /* Typography */
-    --font-body-size: 18px;
+  /* Typography */
+  --font-body-size: 18px;
 
-    /* Font Families and Weights */
-    --font-family-barlow: 'Barlow', sans-serif;
-    --font-family-fraunces: 'Fraunces', serif;
-    --font-weight-barlow-600: 600;
-    --font-weight-fraunces-700: 700;
-    --font-weight-fraunces-900: 900;
+  /* Font Families and Weights */
+  --font-family-barlow: "Barlow", sans-serif;
+  --font-family-fraunces: "Fraunces", serif;
+  --font-weight-barlow-600: 600;
+  --font-weight-fraunces-700: 700;
+  --font-weight-fraunces-900: 900;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img,
 picture {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 body {
-    font-family: var(--font-family-barlow);
-    font-size: var(--font-body-size);
-    max-width: 1440px;
-    margin: auto;
+  font-family: var(--font-family-barlow);
+  font-size: var(--font-body-size);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .hidden-on-desktop {
-    display: block;
+  display: block;
 }
 
 .hidden-on-mobile {
-    display: none;
+  display: none;
 }
 
-
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px;
-    background-image: url(/images/mobile/image-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  background-image: url(/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .nav {
-    display: flex;
-    padding: 30px 20px;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
 }
 
 .header__title {
-    font-family: var(--font-family-fraunces);
-    text-transform: uppercase;
-    color: var(--color-white);
-    letter-spacing: 0.4rem;
-    font-weight: var(--font-weight-fraunces-900);
-    margin-bottom: 25px;
+  font-family: var(--font-family-fraunces);
+  text-transform: uppercase;
+  color: var(--color-white);
+  letter-spacing: 0.4rem;
+  font-weight: var(--font-weight-fraunces-900);
+  margin-bottom: 25px;
 }
 
 .header__image {
-    margin: 30px auto 125px auto;
-
-
+  margin: 30px auto 125px auto;
 }
 
 /* Service classes */
 
-
-
-
 .service__details {
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .service__details__title {
-    padding: 50px 30px 20px 30px;
-    font-family: var(--font-family-fraunces);
-    font-weight: var(--font-weight-fraunces-900);
-    font-size: 1.875rem;
-
+  padding: 50px 30px 20px 30px;
+  font-family: var(--font-family-fraunces);
+  font-weight: var(--font-weight-fraunces-900);
+  font-size: 1.875rem;
 }
 
 .service__details__description {
-    padding: 0 30px;
-    color: var(--color-dark-grayish-blue);
-    line-height: 1.75rem;
-
+  padding: 0 30px;
+  color: var(--color-dark-grayish-blue);
+  line-height: 1.75rem;
 }
 
 .service__details__button {
-    text-transform: uppercase;
-    font-family: var(--font-family-fraunces);
-    max-width: fit-content;
-    border: none;
-    font-weight: var(--font-weight-fraunces-900);
-    align-self: center;
-    margin: 0px auto 40px;
-    position: relative;
-
+  text-transform: uppercase;
+  font-family: var(--font-family-fraunces);
+  max-width: fit-content;
+  border: none;
+  font-weight: var(--font-weight-fraunces-900);
+  align-self: center;
+  margin: 0px auto 40px;
+  position: relative;
 }
 
 .service__details__button::after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    width: 100px;
-    height: 6px;
-    background-color: rgba(255, 255, 0, 0.432);
-    overflow: hidden;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  height: 6px;
+  background-color: rgba(255, 255, 0, 0.432);
+  overflow: hidden;
 }
 
 .job {
-    height: 630px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    gap: 0px;
-    color: var(--color-very-dark-grayish-blue);
-    
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  gap: 0px;
+  color: var(--color-very-dark-grayish-blue);
 }
 
 .job__title {
-    margin-top: 30px;
-    font-family: var(--font-family-fraunces);
+  margin-top: 30px;
+  font-family: var(--font-family-fraunces);
 }
 
 .job__description {
-    padding: 40px 20px;
-    color: var(--color--very-dark-grayish-blue);
-    
-    line-height: 1.75rem;
-}
-.job[data-job='photography'] {
-    background-image: url('/images/mobile/image-photography.jpg');
-    background-size: cover;
-}
+  padding: 40px 20px;
+  color: var(--color--very-dark-grayish-blue);
 
-.job[data-job='graphic-design'] {
-    background-image: url('/images/mobile/image-graphic-design.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  line-height: 1.75rem;
+}
+.job[data-job="photography"] {
+  background-image: url("/images/mobile/image-photography.jpg");
+  background-size: cover;
 }
 
+.job[data-job="graphic-design"] {
+  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__title {
+  font-family: var(--font-family-fraunces);
+  text-transform: uppercase;
+  color: var(--color-dark-grayish-blue);
+  font-size: 1.125rem;
+  letter-spacing: 0.2rem;
+}
+.testimonial__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: var(--color-very-dark-grayish-blue);
+}
+.testimonial__avatar {
+  border-radius: 50%;
+  max-width: 75px;
+}
+.testimonial__description {
+  padding: 0 20px;
+  line-height: 1.5rem;
+  color: var(--color-very-dark-desaturated-blue);
+  font-weight: bolder;
+}
+.testimonial__name {
+  font-family: var(--font-family-fraunces);
+  font-weight: var(--font-weight-fraunces-900);
+  color: black;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--color-dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo {
+  margin: 30px auto;
+}
+
+.footer__list {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+}
 
 
-
-
-
-
-
+.footer__list-item {
+  list-style: none;
+}
+.footer__socials{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
 
 @media screen and (min-width: 375px) {
+  .hidden-on-desktop {
+    display: none;
+  }
 
-    .hidden-on-desktop {
-        display: none;
-    }
+  .hidden-on-mobile {
+    display: block;
+  }
 
-    .hidden-on-mobile {
-        display: block;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    background-image: url(/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 
+  .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 50px;
-        background-image: url(/images/desktop/image-header.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom center;
-    }
+  .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .service {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .job {
+    max-height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .jobs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .job[data-job="photography"] {
+    background-image: url("/images/desktop/image-photography.jpg");
+    background-size: cover;
+  }
 
-    .job {
-        
-        max-height: 550px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-       
-    }
+  .job[data-job="graphic-design"] {
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    .job[data-job='photography'] {
-        background-image: url('/images/desktop/image-photography.jpg');
-        background-size: cover;
-    }
+  .testimonials {
+    display: grid;
+  }
 
-    .job[data-job='graphic-design'] {
-        background-image: url('/images/desktop/image-graphic-design.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

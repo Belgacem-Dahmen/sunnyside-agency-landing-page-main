@@ -1,141 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/75fe86fff7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="/images/logo.svg" alt="" class="logo" />
+        <ul class="hidden">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+        <img src="/images/icon-hamburger.svg" alt="" />
+      </nav>
+      <h1 class="header__title">We are creatives</h1>
+      <img src="/images/icon-arrow-down.svg" alt="" class="header__image" />
+    </header>
+    <div class="container">
+      <div class="services">
+        <div class="service">
+          <img
+            src="/images/mobile/image-transform.jpg"
+            alt=""
+            class="hidden-on-desktop service__image"
+          />
+          <div class="service__details">
+            <h2 class="service__details__title">Transform your brand</h2>
+            <p class="service__details__description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <button class="service__details__button">Learn more</button>
+          </div>
+          <img
+            src="/images/desktop/image-transform.jpg"
+            alt=""
+            class="hidden-on-mobile service__image"
+          />
+        </div>
+        <div class="service">
+          <img
+            src="/images/mobile/image-stand-out.jpg"
+            alt=""
+            class="service__image"
+          />
+          <div class="service__details">
+            <h2 class="service__details__title">
+              Stand out to the right audience
+            </h2>
+            <p class="service__details__description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
 
-  <header class="header">
-    <nav class="nav">
-      <img src="/images/logo.svg" alt="" class="logo">
-      <ul class="hidden">
-        <li> About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      <img src="/images/icon-hamburger.svg" alt="">
-    </nav>
-    <h1 class="header__title">We are creatives</h1>
-    <img src="/images/icon-arrow-down.svg" alt="" class="header__image">
-  </header>
-  <div class="container">
-    <div class="services">
-      <div class="service">
-        <img src="/images/mobile/image-transform.jpg" alt="" class="hidden-on-desktop service__image ">
-        <div class="service__details">
-          <h2 class="service__details__title">Transform your brand</h2>
-          <p class="service__details__description">
-            We are a full-service creative agency specializing in helping brands grow fast.
-            Engage your clients through compelling visuals that do most of the marketing for you.
+            <button class="service__details__button">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="jobs">
+        <div class="job" data-job="graphic-design">
+          <h2 class="job__title">Graphic design</h2>
+          <p class="job__description">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
           </p>
-          <button class="service__details__button">Learn more</button>
         </div>
-        <img src="/images/desktop/image-transform.jpg" alt="" class="hidden-on-mobile service__image">
-      </div>
-      <div class="service">
-        <img src="/images/mobile/image-stand-out.jpg" alt="" class="service__image">
-        <div class="service__details">
-          <h2 class="service__details__title">Stand out to the right audience</h2>
-          <p class="service__details__description">Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll
-            build and extend your brand in digital places.</p>
 
-
-          <button class="service__details__button">
-            Learn More
-          </button>
-
+        <div class="job" data-job="photography">
+          <h2 class="job__title">Photography</h2>
+          <p class="job__description">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="jobs">
-      <div class="job" data-job="graphic-design">
-        <h2 class="job__title">Graphic design</h2>
-        <p class="job__description">
-          Great design makes you memorable. We deliver artwork that underscores your brand
-          message and captures potential
-          clients’ attention.
+    <div class="testimonials">
+      <h2 class="testimonials__title">Client testimonials</h2>
+      <div class="testimonial__card">
+        <img src="/images/image-emily.jpg" alt="" class="testimonial__avatar" />
+        <p class="testimonial__description">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
         </p>
-
+        <p class="testimonial__name">Emily R.</p>
+        <p class="testimonial__post">Marketing Director</p>
       </div>
 
-      <div class="job" data-job="photography">
-        <h2 class="job__title">Photography</h2>
-        <p class="job__description"> Increase your credibility by getting the most stunning, high-quality photos that
-          improve your business image.</p>
+      <div class="testimonial__card">
+        <img
+          src="/images/image-thomas.jpg"
+          alt=""
+          class="testimonial__avatar"
+        />
+        <p class="testimonial__description">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <p class="testimonial__name">Thomas S.</p>
+        <p class="testimonial__post">Chief Operating Officer</p>
+      </div>
+
+      <div class="testimonial__card">
+        <img
+          src="/images/image-jennie.jpg"
+          alt=""
+          class="testimonial__avatar"
+        />
+        <p class="testimonial__description">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <p class="testimonial__name">Jennie F.</p>
+        <p class="testimonial__post">Business Owner</p>
       </div>
     </div>
 
-
-
-  </div>
-
-
-
-
-
-
-
-  <div class="testimonial">
-
-    <h2 class="testimonial__title">Client testimonials</h2>
-    <div class="testimonial__card">
-      <img src="/images/image-emily.jpg" alt="" class="testimonial__avatar">
-      <p class="testimonial__description">
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-
-      </p>
-      <p class="testimonial__name">Emily R.</p>
-      <p class="testimonial__post">Marketing Director</p>
-
-
+    <div class="gallery">
+      <img
+        src="/images/mobile/image-gallery-milkbottles.jpg"
+        alt=""
+        class="exemple"
+      />
+      <img
+        src="/images/mobile/image-gallery-orange.jpg"
+        alt=""
+        class="exemple"
+      />
+      <img src="/images/mobile/image-gallery-cone.jpg" alt="" class="exemple" />
+      <img
+        src="/images/mobile/image-gallery-sugar-cubes.jpg"
+        alt=""
+        class="exemple"
+      />
     </div>
+    <footer class="footer">
+      <img
+        src="/images/logo.svg"
+        fill="currentColor"
+        alt=""
+        class="footer__logo"
+      />
+      <ul class="footer__list">
+        <li class="footer__list-item">About</li>
+        <li class="footer__list-item">Services</li>
+        <li class="footer__list-item">Projects</li>
+      </ul>
+      <div class="footer__socials">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
 
-    <div class="testimonial__card">
-      <img src="/images/image-thomas.jpg" alt="" class="testimonials__avatar">
-      <p class="testimonial__description">
-        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-        enjoyable experience.
-      </p>
-      <p class="testimonial__name">Thomas S.</p>
-      <p class="testimonial__post">Chief Operating Officer</p>
-
-
-    </div>
-
-    <div class="testimonial__card">
-      <img src="/images/image-jennie.jpg" alt="" class="testimonials__avatar">
-      <p class="testimonial__description"> Incredible end result! Our sales increased over 400% when we worked with
-        Sunnyside. Highly recommended!
-      </p>
-      <p class="testimonial__name">Jennie F. </p>
-      <p class="testimonial__post">Business Owner </p>
-    </div>
-
-  </div>
-
-
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>
