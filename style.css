@@ -197,7 +197,7 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .testimanials-grid {
@@ -217,7 +217,7 @@ header {
 .testimonial__card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   color: var(--color-very-dark-grayish-blue);
 }
@@ -238,6 +238,12 @@ header {
   font-family: var(--font-family-fraunces);
   font-weight: var(--font-weight-fraunces-900);
   color: black;
+}
+
+.testimonial__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* gallery */
@@ -311,6 +317,7 @@ header {
 
   .service__details__title {
     max-width: 75%;
+
   }
 
   .service__details__button {
@@ -340,6 +347,17 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .job__title {
+    font-weight: var(--font-weight-fraunces-900);
+  }
+
+  .job__description {
+    max-width: 60%;
+    font-weight: 500;
+  }
+
+
 
   .testimonials {
     display: grid;
