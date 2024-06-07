@@ -17,14 +17,17 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <img src="/images/logo.svg" alt="" class="logo" />
-      <ul class="hidden">
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      <img src="/images/icon-hamburger.svg" alt="" />
+      <img src="/images/logo.svg" alt="" class="nav_logo" />
+      <div class="nav__list">
+        <ul class=" hidden-on-mobile">
+          <li class="nav__list-item">About</li>
+          <li class="nav__list-item">Services</li>
+          <li class="nav__list-item">Projects</li>
+          <button class="nav__list-button">Contact </button>
+        </ul>
+      </div>
+      <img class="hidden-on-desktop" src="/images/icon-hamburger.svg" alt="" />
+
     </nav>
     <h1 class="header__title">We are creatives</h1>
     <img src="/images/icon-arrow-down.svg" alt="" class="header__image" />
