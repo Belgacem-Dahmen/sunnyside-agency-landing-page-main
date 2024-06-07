@@ -125,6 +125,7 @@ header {
   align-self: left;
   margin: 0px auto 40px;
   position: relative;
+  background-color: white;
 }
 
 
@@ -258,7 +259,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: var(--color-dark-moderate-cyan);
   color: var(--color-dark-desaturated-cyan);
 }
