@@ -39,6 +39,10 @@ picture {
   display: block;
 }
 
+svg {
+  fill: currentColor;
+}
+
 body {
   font-family: var(--font-family-barlow);
   font-size: var(--font-body-size);
@@ -118,12 +122,25 @@ header {
   max-width: fit-content;
   border: none;
   font-weight: var(--font-weight-fraunces-900);
-  align-self: center;
+  align-self: left;
   margin: 0px auto 40px;
   position: relative;
 }
 
-.service__details__button::after {
+
+.service__details__button[data-service="audience"]::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  height: 6px;
+  background-color: hsl(7, 99%, 70%, 40%);
+  overflow: hidden;
+
+}
+
+.service__details__button[data-service="transform"]::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -132,6 +149,7 @@ header {
   height: 6px;
   background-color: rgba(255, 255, 0, 0.432);
   overflow: hidden;
+
 }
 
 .job {
@@ -156,14 +174,17 @@ header {
 
   line-height: 1.75rem;
 }
+
 .job[data-job="photography"] {
   background-image: url("/images/mobile/image-photography.jpg");
+  background-position: center;
   background-size: cover;
 }
 
 .job[data-job="graphic-design"] {
   background-image: url("/images/mobile/image-graphic-design.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -176,6 +197,13 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  
+}
+
+.testimanials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .testimonials__title {
@@ -185,6 +213,7 @@ header {
   font-size: 1.125rem;
   letter-spacing: 0.2rem;
 }
+
 .testimonial__card {
   display: flex;
   flex-direction: column;
@@ -192,16 +221,19 @@ header {
   align-items: center;
   color: var(--color-very-dark-grayish-blue);
 }
+
 .testimonial__avatar {
   border-radius: 50%;
   max-width: 75px;
 }
+
 .testimonial__description {
   padding: 0 20px;
   line-height: 1.5rem;
   color: var(--color-very-dark-desaturated-blue);
   font-weight: bolder;
 }
+
 .testimonial__name {
   font-family: var(--font-family-fraunces);
   font-weight: var(--font-weight-fraunces-900);
@@ -217,11 +249,14 @@ header {
 /* footer */
 
 .footer {
-  background-color: var(--color-dark-grayish-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
+  background-color: var(--color-dark-moderate-cyan);
+  color: var(--color-dark-desaturated-cyan);
 }
+
 .footer__logo {
   margin: 30px auto;
 }
@@ -236,13 +271,14 @@ header {
 .footer__list-item {
   list-style: none;
 }
-.footer__socials{
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
+
+.footer__socials {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 475px) {
   .hidden-on-desktop {
     display: none;
   }
@@ -265,6 +301,21 @@ header {
   .service {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .service__details {
+    text-align: left;
+    margin: auto;
+    padding: 0 100px;
+  }
+
+  .service__details__title {
+    max-width: 75%;
+  }
+
+  .service__details__button {
+    align-self: flex-start;
+    margin: 0 40px;
   }
 
   .jobs {
@@ -294,8 +345,16 @@ header {
     display: grid;
   }
 
+  .testimanials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px auto;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+
 }
