@@ -300,7 +300,8 @@ header {
   cursor: pointer;
 }
 
-.footer__list-item:hover, .footer__socials i:hover {
+.footer__list-item:hover,
+.footer__socials i:hover {
   color: var(--color-white);
 }
 
@@ -333,6 +334,10 @@ header {
     font-weight: var(--font-weight-fraunces-600);
     align-items: center;
 
+  }
+
+  .nav__list li:hover {
+    cursor: pointer;
   }
 
   .nav__list-button {
