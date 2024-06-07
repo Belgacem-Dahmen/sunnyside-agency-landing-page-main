@@ -26,16 +26,27 @@
           <button class="nav__list-button">Contact </button>
         </ul>
       </div>
-      <img class="hidden-on-desktop" src="/images/icon-hamburger.svg" alt="" />
+      <img class="hidden-on-desktop" id="hamburger" src="/images/icon-hamburger.svg" alt="" />
 
     </nav>
+    <div class=" hidden mobile-menu" id="mobile-menu">
+      <div class="triangle-left">
+        <ul class=" mobile-menu__list ">
+          <li class="mobile-menu__list-item">About</li>
+          <li class="mobile-menu__list-item">Services</li>
+          <li class="mobile-menu__list-item">Projects</li>
+          <button class="mobile-menu__list-button">Contact </button>
+      </div>
+      
+
+    </div>
     <h1 class="header__title">We are creatives</h1>
     <img src="/images/icon-arrow-down.svg" alt="" class="header__image" />
   </header>
   <div class="container">
     <div class="services">
       <div class="service">
-        <img src="/images/mobile/image-transform.jpg" alt="" class="hidden-on-desktop service__image" />
+        <img class="hidden-on-desktop service__image" src="/images/mobile/image-transform.jpg" alt="" />
         <div class="service__details">
           <h2 class="service__details__title">Transform your brand</h2>
           <p class="service__details__description">
@@ -153,6 +164,8 @@
 
     </div>
   </footer>
+
+  <script src="/index.js"></script>
 </body>
 
 </html>
