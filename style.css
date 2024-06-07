@@ -142,6 +142,8 @@ header {
 
 }
 
+
+
 .service__details__button[data-service="transform"]::after {
   content: "";
   position: absolute;
@@ -152,6 +154,14 @@ header {
   background-color: rgba(255, 255, 0, 0.432);
   overflow: hidden;
 
+}
+
+.service__details__button[data-service]:hover::after {
+  content: "";
+  transform: scale(1.1);
+  height: 8px;
+  fill: currentColor;
+  cursor: pointer;
 }
 
 .job {
@@ -278,12 +288,20 @@ header {
 
 .footer__list-item {
   list-style: none;
+  cursor: pointer;
 }
+
+
 
 .footer__socials {
   display: flex;
   margin-top: 50px;
   gap: 30px;
+  cursor: pointer;
+}
+
+.footer__list-item:hover, .footer__socials i:hover {
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 575px) {
@@ -304,7 +322,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    
+
   }
 
   .nav__list ul {
@@ -325,6 +343,13 @@ header {
     text-transform: uppercase;
     font-weight: var(--font-weight-fraunces-700);
 
+
+  }
+
+  .nav__list-button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%, 50%);
+    color: white;
   }
 
   .header__image {
@@ -359,7 +384,10 @@ header {
   .service__details__button {
     align-self: flex-start;
     margin: 0 40px;
+
   }
+
+
 
   .jobs {
     display: grid;
